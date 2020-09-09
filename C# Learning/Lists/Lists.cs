@@ -80,6 +80,15 @@ namespace list_tutorial
             }
             foreach (var item in fibonacciNumbers)
                 Console.WriteLine(item);
+            
+            //additional task
+            for(int x=0;x<7;x++){
+                for(int l=0;l<x;l++){
+                    Console.Write(7);
+                }
+                Console.WriteLine();
+            }
+        
 
         }
     }
