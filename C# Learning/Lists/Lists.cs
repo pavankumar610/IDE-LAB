@@ -71,14 +71,24 @@ namespace list_tutorial
 
 
             var fibonacciNumbers = new List<int> {1, 1};
-
-            var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
-            var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
-
-            fibonacciNumbers.Add(previous + previous2);
-
+            var i = 0;
+            while(i<20){
+                var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+                var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+                i = i+1;
+                fibonacciNumbers.Add(previous + previous2);
+            }
             foreach (var item in fibonacciNumbers)
                 Console.WriteLine(item);
+            
+            //additional task
+            for(int x=0;x<7;x++){
+                for(int l=0;l<x;l++){
+                    Console.Write(7);
+                }
+                Console.WriteLine();
+            }
+        
 
         }
     }
